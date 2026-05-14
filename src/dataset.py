@@ -19,7 +19,7 @@ class TransactionImageDataset(Dataset):
 
     def __getitem__(self, idx):
         image = self.images[idx]
-        label = int(self.labels[idx])
+        label = torch.tensor(int(self.labels[idx]), dtype=torch.long)
         if self.transform is not None:
             image = self.transform(image)
         else:

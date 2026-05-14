@@ -16,7 +16,7 @@ def compute_gradcam(model: torch.nn.Module,
     target = None
     if target_category is not None:
         target = [ClassifierOutputTarget(target_category)]
-    cam = GradCAM(model=model, target_layers=[target_layer], use_cuda=(device.type == "cuda"))
+    cam = GradCAM(model=model, target_layers=[target_layer])
     grayscale_cam = cam(input_tensor=input_tensor, targets=target)
     return grayscale_cam[0]
 
