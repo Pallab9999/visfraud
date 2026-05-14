@@ -40,9 +40,13 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
+> Note: The Grad-CAM dependency is installed from the GitHub source because `pytorch-grad-cam` is not available on PyPI for some Python 3.13 environments.
+
 ## Usage
 
-1. Download `creditcard.csv` from Kaggle and place it in `data/`
+1. Download `creditcard.csv` from Kaggle and place it in `data/`, or use the optional downloader:
+   - `python scripts/download_data.py`
+   - If running the downloader, configure Kaggle credentials in `~/.kaggle/kaggle.json` or via `KAGGLE_USERNAME` and `KAGGLE_KEY`.
 2. Run the notebooks in order:
    - `notebooks/01_encoding.ipynb`
    - `notebooks/02_training.ipynb`
