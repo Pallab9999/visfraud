@@ -1,0 +1,18 @@
+# Data
+/data/creditcard.csv
+/data/*.npz
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Outputs
+outputs/
+
+# Virtual environment
+.venv/

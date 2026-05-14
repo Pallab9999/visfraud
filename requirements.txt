@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+pyts
+xgboost
+torch
+torchvision
+pytorch-grad-cam
+imbalanced-learn
+notebook
+jupyterlab
